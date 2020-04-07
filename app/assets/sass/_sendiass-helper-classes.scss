@@ -1,0 +1,38 @@
+// --------------------- Margin helper classes -------------------
+// ---------------------------------------------------------------
+
+.no-margin-bottom {margin-bottom: 0;}
+.no-margin-top {margin-top: 0;}
+.no-margin-left {margin-left: 0;}
+.no-margin-right {margin-right: 0;}
+.no-margin {margin: 0;}
+
+.default-margin-top {margin-top: 40px; @media (min-width: 768px) { margin-top: 80px; }}
+.default-margin-right {margin-right: 40px; @media (min-width: 768px) { margin-right: 80px; }}
+.default-margin-bottom {margin-bottom: 40px; @media (min-width: 768px) { margin-bottom: 80px; };}
+.default-margin-left {margin-left: 40px; @media (min-width: 768px) { margin-left: 80px; }}
+
+// --------------------- Padding helper classes ------------------
+// ---------------------------------------------------------------
+
+.no-padding-bottom {padding-bottom: 0;}
+.no-padding-top {padding-top: 0;}
+.no-padding-left {padding-left: 0;}
+.no-padding-right {padding-right: 0;}
+.no-padding {padding: 0;}
+
+.default-padding-top {padding-top: 40px; @media (min-width: 768px) { padding-top: 80px; }}
+.default-padding-right {padding-right: 40px; @media (min-width: 768px) { padding-right: 80px; }}
+.default-padding-bottom {padding-bottom: 40px; @media (min-width: 768px) { padding-bottom: 80px; };}
+.default-padding-left {padding-left: 40px; @media (min-width: 768px) { padding-left: 80px; }}
+
+// --------------------- Screen reader helper --------------------
+// ---------------------------------------------------------------
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+// --------------------- Text alignment helper -------------------
+// ---------------------------------------------------------------
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}

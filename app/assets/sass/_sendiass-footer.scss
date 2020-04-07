@@ -1,0 +1,92 @@
+footer {
+    background: #222222;
+    border-top: 8px solid #8F298C;
+    padding: 40px 0 0 0;
+    br {
+        display: none;
+    }
+    h2 {
+        @include heading-xxsmall();
+        font-weight: 600;
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+    .footer-col-one, .footer-col-two, .footer-col-three {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: underline;
+                    color: #ffffff;
+                    display: block;
+                    margin-bottom: 16px;
+                    &:visited {
+                        text-decoration: underline;
+                        color: #ffffff;
+                    }
+                    &:focus {
+                        color: #222222;
+                        background: #FFBF47;
+                        text-decoration: none;
+                    }
+                }
+                &:last-child {
+                    a {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    border-top: 1px solid #8C8C8C;
+    margin-top: 40px;
+    padding-top: 40px;
+    @media (min-width: 768px) { 
+        padding-bottom: 40px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.footer-copyright-content {
+    margin-bottom: 40px;
+}
+
+.footer-copyright-logos {
+    ul {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @media (min-width: 768px) { 
+            justify-content: flex-end;
+        }
+        li {
+            margin-right: 34px;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+            @media (min-width: 768px) { 
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.footer-col-one, .footer-col-two {
+    margin-bottom: 40px;
+    @media (min-width: 768px) { 
+        margin-bottom: 0;
+    }
+}

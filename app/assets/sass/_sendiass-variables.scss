@@ -1,0 +1,46 @@
+// Colours
+$color-secondary: #222222;
+
+//black and greys
+$black:#263238 !default;
+$light-grey:#eceff1 !default;
+
+//colours
+$blue:#007299 !default;
+$light-blue: #3399BB !default;
+$lighter-blue: #E5F1F5 !default;
+$green:#2e7d32 !default;
+
+//base.scss
+$base-background-color:#fff !default;
+$btn-background-color:$green !default;
+
+//responsive menu width
+$responsiveMenuWidth:767px !default;
+
+// --------------------- Typography ------------------------------
+// ---------------------------------------------------------------
+$font-primary: 'Open Sans', sans-serif; // Body font
+$font-secondary: 'Raleway', sans-serif; // Header font
+$base-font-size: 16px;
+$base-font-size-desktop: 18px;
+$base-line-height: 1.8;
+$base-font-color: #0B0C0C;
+$base-font-weight: 400;
+$header-font-color: #0B0C0C;
+$header-font-weight: 600;
+
+// mainNav.scss
+$main-nav-background:lighten($blue,3%) !default;
+$main-nav-link:#fff !default;
+
+//mainMenu.scss -- responsive icons color
+$menu-link-color:$light-blue !default;
+
+//extra colours
+$focus-color:#FFBF47 !default;
+$border-color:$light-grey !default;
+$base-link-hover-color:$light-blue !default;
+
+//panel colours
+$panel-color:$lighter-blue !default;

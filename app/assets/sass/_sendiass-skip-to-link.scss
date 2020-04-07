@@ -1,0 +1,27 @@
+// --------------------- skip to content -------------------------
+// ---------------------------------------------------------------
+
+.skip {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+    &:focus {       
+        left: 8px;
+        top: 8px;
+        width: auto;
+        height: auto;
+        overflow: auto;
+        z-index: 2000;
+        background-color: #FFBF47;
+        color: #212224;
+        text-decoration: none;
+        outline: 0;
+        padding:8px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+}

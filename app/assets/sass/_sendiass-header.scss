@@ -1,0 +1,200 @@
+// --------------------- Pre header ------------------------------
+// ---------------------------------------------------------------
+
+.pre-header {
+    background: #222222;
+    padding: 8px 0;
+    p {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+}
+
+// --------------------- Global Header ---------------------------
+// ---------------------------------------------------------------
+
+.header-nav-container {
+    padding: 6px 0;
+    line-height: 0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo-link {   
+    display: inline-block;
+    &:focus {
+        background: transparent; 
+        img {
+            border: 2px solid #FFBF47;
+        }
+    }
+}
+
+.site-logo-img {
+    height: 44px;
+    border: 2px solid #ffffff;
+    @media (min-width: 641px) {
+        height: 80px;
+    }
+}
+
+
+
+// --------------------- Mobile nav button -----------------------
+// ---------------------------------------------------------------
+
+.main-menu {
+    background: #222222;
+    font-family: $font-secondary;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 18px;
+    padding: 7px 24px;
+    line-height: 32.4px;
+    border-radius: 33px;
+    border: 4px solid #222222;
+    color: #ffffff;
+    &:visited {
+        color: #ffffff;
+    }
+    &:hover {
+        background: transparent;
+        color: #222222;
+        text-decoration: none;
+    }
+    &:focus {
+        background: #FFBF47;
+        color: #222222;
+        border: 4px solid #FFBF47;
+    }
+}
+
+// --------------------- Navigation ------------------------------
+// ---------------------------------------------------------------
+
+nav.global-navigation {
+    background: #222222;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 8px;
+    display: none;
+
+    // Sharepoint overrides
+    .ms-core-listMenu-horizontalBox {
+        display: block;
+    }
+
+    &.active {
+        display: block;
+    }    
+    
+    ul.ms-core-listMenu-root {
+        padding-left: 0;
+        line-height: 32.4px;
+        width: 100%;
+        @media (min-width: 768px) {  
+            text-align: right;
+        }
+        li.static {
+            display: block;
+            margin-bottom: 8px;
+            @media (min-width: 768px) {  
+                display: inline;
+            }
+            &.selected {
+                .selected {
+                    border-bottom: 2px solid #ffffff;
+                    color: #ffffff;                    
+                    &:focus {
+                        background: #FFBF47;
+                        color: #222222;
+                        border-bottom: 2px solid #FFBF47;
+                    }
+                    @media (min-width: 768px) { 
+                        border-bottom: 4px solid #8F298C;
+                        &:focus {
+                            border-bottom: 4px solid #222222;
+                        }
+                    }
+                }
+            }
+            a {
+                font-size: 18px;
+                font-family: $font-secondary;
+                color: #ffffff;
+                display: inline-block;
+                &:visited {
+                    color: #ffffff;
+                }
+                &:focus {
+                    background: #FFBF47;
+                    color: #222222;
+                }                
+                @media (min-width: 768px) { 
+                    color: #222222 !important;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    border-bottom: 2px solid #ffffff;
+                    &:hover {
+                        color: #222222;
+                        border-bottom: 2px solid #222222;
+                    }
+                    &:focus {
+                        border-bottom: 2px solid #222222;
+                    }                   
+                }
+            }
+            
+        }
+    }
+    li.static > .ms-core-listMenu-item {
+        margin: 0;
+        border: 0;
+    }
+    
+    @media (min-width: 768px) { 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        &.active {
+            display: flex;
+        }
+    }
+    
+}
+
+// --------------------- Page header -----------------------------
+// ---------------------------------------------------------------
+
+.page-header {
+    background-color: #8F298C;
+    text-align: center;  
+    padding-bottom: 97px;
+    margin: 0 0 40px 0;
+    border: 0;   
+    text-align: left; 
+    @media (min-width: 768px) { 
+        margin: 0 0 80px 0;
+    }
+    &:after {
+        content: "";
+        display: block;
+        background: url('../images/wave.png') 100px repeat;
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        background-size: auto 100%;
+    }
+}
+
+.page-header-title {
+    color: #ffffff;
+}

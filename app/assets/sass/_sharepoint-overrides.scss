@@ -1,0 +1,21 @@
+// --------------------- SharePoint overrides --------------------
+// ---------------------------------------------------------------
+
+div#ms-designer-ribbon {
+    position: relative !important;
+}
+
+body {overflow: auto;}
+
+.dfwp-column {
+    float: none;
+    padding-left: 0;
+}
+
+.item {
+    padding: 0;
+}
+
+#s4-bodyContainer {
+    padding-bottom: 0;
+}

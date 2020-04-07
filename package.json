@@ -21,6 +21,7 @@
     "@types/knockout": "^3.4.47",
     "@types/moment": "^2.13.0",
     "@types/sharepoint": "^2016.1.0",
+    "bootstrap": "^4.4.1",
     "file-exists": "^2.0.0",
     "file-system": "^2.2.1",
     "gulp": "^3.9.1",
@@ -35,6 +36,8 @@
     "gulp-sass": "^3.0.0",
     "gulp-sourcemaps": "^2.2.0",
     "gulp-spsync-creds": "^2.2.6",
+    "gulp-tslint": "^8.1.2",
+    "gulp-typescript": "^4.0.0-alpha.1",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "lcc_frontend_toolkit": "^0.321.0",
@@ -45,10 +48,8 @@
     "rmdir": "^1.2.0",
     "root-require": "^0.3.1",
     "syncy": "^2.0.1",
-    "uuid": "^3.0.1",
     "tslint": "^5.9.1",
     "typescript": "^2.6.2",
-    "gulp-tslint": "^8.1.2",
-    "gulp-typescript": "^4.0.0-alpha.1"
+    "uuid": "^3.0.1"
   }
 }
