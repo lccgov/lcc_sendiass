@@ -32,7 +32,64 @@
         <meta property="og:image:height" content="1080" />
         
         <!-- SharePoint scripts -->
-        <SharePoint:RobotsMetaTag runat="server">                         </SharePoint:RobotsMetaTag>                         <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">                         </SharePoint:CssRegistration>                         <SharePoint:CssLink runat="server" Version="15">                         </SharePoint:CssLink>                         <SharePoint:PageTitle runat="server">                             <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">                                 <SharePoint:ProjectProperty Property="Title" runat="server">                             </SharePoint:ProjectProperty>                         </asp:ContentPlaceHolder>                         </SharePoint:PageTitle>                         <SharePoint:StartScript runat="server">                         </SharePoint:StartScript>                         <SharePoint:CacheManifestLink runat="server">                         </SharePoint:CacheManifestLink>                         <SharePoint:PageRenderMode runat="server" RenderModeType="Standard">                         </SharePoint:PageRenderMode>                         <SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">                         </SharePoint:ScriptLink>                         <SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">                         </SharePoint:ScriptLink>                         <SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">                         </SharePoint:ScriptLink>                         <SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">                         </SharePoint:ScriptLink>                         <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">                         </SharePoint:ScriptLink>                         <SharePoint:CustomJSUrl runat="server">                         </SharePoint:CustomJSUrl>                         <SharePoint:SoapDiscoveryLink runat="server">                         </SharePoint:SoapDiscoveryLink>                         <SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">                             <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">                             </asp:ContentPlaceHolder>                             <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">                             </SharePoint:DelegateControl>                             <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">                             </asp:ContentPlaceHolder>                         </SharePoint:AjaxDelta>
+        <SharePoint:RobotsMetaTag runat="server">            
+        </SharePoint:RobotsMetaTag>
+
+        <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">
+        </SharePoint:CssRegistration>
+        
+        <SharePoint:CssLink runat="server" Version="15">            
+        </SharePoint:CssLink>
+        
+        <SharePoint:PageTitle runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+                <SharePoint:ProjectProperty Property="Title" runat="server">                    
+                </SharePoint:ProjectProperty>
+            </asp:ContentPlaceHolder>
+        </SharePoint:PageTitle>
+        
+        <SharePoint:StartScript runat="server">            
+        </SharePoint:StartScript>
+
+        <SharePoint:CacheManifestLink runat="server">            
+        </SharePoint:CacheManifestLink>
+        
+        <SharePoint:PageRenderMode runat="server" RenderModeType="Standard">            
+        </SharePoint:PageRenderMode>
+        
+        <SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        
+        <SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">         
+        </SharePoint:ScriptLink>
+        
+        <SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        
+        <SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        
+        <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        
+        <SharePoint:CustomJSUrl runat="server">
+        </SharePoint:CustomJSUrl>
+        
+        <SharePoint:SoapDiscoveryLink runat="server">
+        </SharePoint:SoapDiscoveryLink>
+        
+        <SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+            
+            <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">
+            </asp:ContentPlaceHolder>
+        
+            <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">
+            </SharePoint:DelegateControl>
+            
+            <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">
+            </asp:ContentPlaceHolder>
+    
+        </SharePoint:AjaxDelta>
 
         <!-- Template CSS -->
         <link rel="stylesheet" href="/_catalogs/masterpage/public/stylesheets/lcc-template.css?1.1.140" />
@@ -46,7 +103,41 @@
     </head>
 
     <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();">
-    <SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">                             <WebPartPages:SPWebPartManager runat="server">                             </WebPartPages:SPWebPartManager>                         </SharePoint:AjaxDelta>                         <SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" /><SharePoint:ImageLink runat="server" />                             <SharePoint:SharePointForm onsubmit="if (typeof (_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server"><asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false"  EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />                             <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">                                 <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">                                     <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">                                         <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">                                         </SharePoint:EncodedLiteral>                                     </a>                                 </div>                         <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">                             <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">                                 <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">                                 </SharePoint:EncodedLiteral>                             </a>                         </div>                         </SharePoint:SPSecurityTrimmedControl>                         <div id="ms-designer-ribbon">                             <PublishingRibbon:PublishingRibbon runat="server" />                          </div>
+        
+        <SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">
+            <WebPartPages:SPWebPartManager runat="server">                
+            </WebPartPages:SPWebPartManager>
+        </SharePoint:AjaxDelta>
+
+        <SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" />
+        
+        <SharePoint:ImageLink runat="server" />
+        
+        <SharePoint:SharePointForm onsubmit="if (typeof (_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server"><asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false"  EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+        
+        <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
+            
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                        
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+            
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                        
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+        
+        </SharePoint:SPSecurityTrimmedControl>
+    
+        <div id="ms-designer-ribbon">
+            <PublishingRibbon:PublishingRibbon runat="server" />
+        </div>
 
         <div id="skiplink-container">
             <div>

@@ -37,11 +37,216 @@ h4 {@include heading-small();}
 h5 {@include heading-xsmall();}
 h6 {@include heading-xxsmall();}
 
+h1.body-text, 
+h2.body-text, 
+h3.body-text, 
+h4.body-text, 
+h5.body-text, 
+h6.body-text,
+.ms-rtestate-field h1.body-text,
+.ms-rtestate-field h2.body-text,
+.ms-rtestate-field h3.body-text,
+.ms-rtestate-field h4.body-text,
+.ms-rtestate-field h5.body-text,
+.ms-rtestate-field h6.body-text,
+.body-text {
+    font-family: $font-primary, sans-serif;
+    font-weight: $base-font-weight;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:$base-font-color;
+
+    margin-bottom: 16px;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    @media (min-width: 641px) {
+        font-size: $base-font-size-desktop;
+    }
+    &:after {
+        display: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    &:after {
+        width: 50px;
+        margin-left: -12px;
+        content: "";
+        background: #8F298C;
+        display: block;
+        height: 2px;
+        margin-top: 16px;
+    }
+    @media (min-width: 768px) {
+        &:after {
+            width: 96px;
+            margin-left: -40px;
+            margin-top: 24px;
+        }
+    }
+    &.no-underline {
+        &:after {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
 // --------------------- Paragraph font styles -------------------
 // ---------------------------------------------------------------
 
 p {
     margin-top: 0;
+}
+
+.ms-rtestate-field p, 
+p.ms-rteElement-P {
+    margin-bottom: 16px;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    @media (min-width: 641px) {
+        font-size: $base-font-size-desktop;
+    }
+}
+
+p.lead,
+.ms-rtestate-field p.lead, 
+p.lead.ms-rteElement-P {
+    font-size: 23.4px;
+    line-height: 1.5;
+}
+
+// --------------------- UL font styles --------------------------
+// ---------------------------------------------------------------
+ul.list {
+    margin-top: 0;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    li {
+        a {
+            text-decoration: underline;
+            color: #3773BB;
+            &:visited {
+                color: #3773BB;
+            }
+            &:focus {
+                outline: none;
+                background: #FFBF47;
+                color: #222222;
+                text-decoration: none;
+                border-bottom: 2px solid #222222;
+            }
+        }
+    }
+}
+
+ul.numbered-list {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 16px;
+    list-style-type: none;
+    li {
+        counter-increment: step-counter;
+        padding: 0px 10px 16px 40px;
+        position: relative;
+        &:before {
+            content: counter(step-counter);
+            background-color: #8F298C;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 50%;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            margin-right: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 1.2;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a {
+            text-decoration: underline;
+            color: #3773BB;
+            &:visited {
+                color: #3773BB;
+            }
+            &:focus {
+                outline: none;
+                background: #FFBF47;
+                color: #222222;
+                text-decoration: none;
+                border-bottom: 2px solid #222222;
+            }
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    @media (min-width: 768px) {
+        margin-bottom: 24px;
+        padding-top: 8px;
+        li { padding: 0px 10px 16px 57px;
+            &:before {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+ul.no-bullet-list {
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 16px;
+    li {
+        list-style: none;
+        a {
+            text-decoration: underline;
+            color: #3773BB;
+            &:visited {
+                color: #3773BB;
+            }
+            &:focus {
+                outline: none;
+                background: #FFBF47;
+                color: #222222;
+                text-decoration: none;
+                border-bottom: 2px solid #222222;
+            }
+        }
+    }
+}
+
+ul.sitemap-list {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+    ul {
+        list-style: disc;
+    }
+    a {
+        text-decoration: underline;
+    }
+    li, li ul li {
+        margin-top: 16px;
+    }
+    > li:first-child {
+        margin-top: 0;
+    }
 }
 
 // --------------------- Interactive font styles -----------------
@@ -55,10 +260,21 @@ p {
 }
 
 a {
+    &:visited {
+        color: #3773BB;
+    }
     &:focus {
         background: #FFBF47;
         outline: none;
         color: #222222;
+    }
+    &[rel=external] {
+        &:after {
+            content: "\f35d";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            padding-left: 8px;
+        }
     }
 }
 
@@ -69,3 +285,56 @@ a {
     font-size: 16px;
 }
 
+.highlight-text {
+    border-left: 8px solid #8F298C;
+    padding-left: 16px;
+    @media (min-width: 768px) {
+        border-left: 16px solid #8F298C;
+    }
+}
+
+// --------------------- Contact details -------------------------
+// ---------------------------------------------------------------
+.email {
+    padding-left: 30px;
+    position: relative;
+    &:before {
+        content: "\f0e0";
+        color: #222222;
+        font-family: FontAwesome;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: inline-block;
+    }
+}
+
+.telephone {
+    padding-left: 30px;
+    position: relative;
+    &:before {
+        content: "\f879";
+        color: #222222;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: inline-block;
+    }
+}
+
+.address {
+    padding-left: 30px;
+    position: relative;
+    &:before {
+        content: "\f3c5";
+        color: #222222;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: inline-block;
+    }
+}

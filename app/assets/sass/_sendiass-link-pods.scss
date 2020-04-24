@@ -1,0 +1,112 @@
+.link-pods {
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+    li {
+        margin-bottom: 16px;        
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            img {
+                border-top-left-radius: 33px;
+            }
+            p {
+                border-bottom-right-radius: 33px;
+                margin-bottom: 0;
+                background: #8F298C;
+                padding: 24px 88px 24px 24px;
+                color: #ffffff;
+                width: 100%;
+                flex-grow: 1;
+                font-family: $font-secondary;
+                position: relative;
+                @include heading-xsmall();
+                margin: 0;
+                @media (min-width: 641px) {
+                    margin: 0;
+                }
+
+                &:after {
+                    content: "\f0a9";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    position: absolute;
+                    right: 24px;
+                    font-size: 37px;
+                    top: 23px;
+                    line-height: 40px;
+                }
+                &.red {
+                    background: #CE3438;                
+                    color: #ffffff;
+                }
+                &.blue {
+                    background: #3773BB;                
+                    color: #ffffff;
+                }
+                &.yellow {
+                    background: #F7C022;                
+                    color: #222222;
+                }
+                &.green {
+                    background: #1D6332;                
+                    color: #ffffff;
+                }
+            }
+            &:hover {
+                text-decoration: none;
+                p {
+                    background: darken(#8F298C, 15%);                       
+                    &.red {
+                        background: darken(#CE3438, 15%);   
+                    }
+                    &.blue {
+                        background: darken(#3773BB, 15%);   
+                    }
+                    &.yellow {
+                        background: darken(#F7C022, 15%); 
+                        color: #ffffff;
+                    }
+                    &.green {
+                        background: darken(#1D6332, 15%);         
+                    }
+                }
+            }
+            &:focus, &:focus:hover {
+                background: transparent;
+                p {
+                    background: #FFBF47;
+                    color: #222222;
+                    text-decoration: underline;
+                    &:after {
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 568px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -8px;
+        margin-right: -8px;
+        li {
+            width: calc(50% - 16px);
+            margin: 0 8px 16px 8px;
+        }
+    }   
+    @media (min-width: 768px) {
+        li {
+            width: calc(33.333% - 16px);
+        }
+        li.half {
+            width: calc(50% - 16px);
+        }
+        li.two-thirds {
+            width: calc(66.666% - 16px);
+        }
+    }
+}

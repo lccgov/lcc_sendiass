@@ -1,0 +1,42 @@
+.promo-two-col{
+    h1,h2,h3,h4,h5,h6 {
+        &:after {
+            width: 50px;
+            margin-left: -12px;
+            content: "";
+            background: #8F298C;
+            display: block;
+            height: 2px;
+            margin-top: 16px;
+        }
+        @media (min-width: 768px) {
+            &:after {
+                width: 96px;
+                margin-left: -40px;
+                margin-top: 24px;
+            }
+        }
+    }
+    .promo-two-col-content {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        @media (min-width: 768px) {
+            padding-left: 40px;
+        }
+    }
+    .btn {
+        width: fit-content;
+    }
+    @media (min-width: 768px) {
+        .btn {
+            margin-top: 16px;
+        }
+    }
+    @media (max-width: 767px) {
+        .promo-two-col-content {
+            margin-top: 16px;
+        }
+    }
+}

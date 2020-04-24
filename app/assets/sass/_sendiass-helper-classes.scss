@@ -7,6 +7,13 @@
 .no-margin-right {margin-right: 0;}
 .no-margin {margin: 0;}
 
+@media (max-width: 767px) {
+    .small-margin-top {margin-top: 40px;}
+    .small-margin-right {margin-right: 40px;}
+    .small-margin-bottom {margin-bottom: 40px;}
+    .small-margin-left {margin-left: 40px;}
+}
+
 .default-margin-top {margin-top: 40px; @media (min-width: 768px) { margin-top: 80px; }}
 .default-margin-right {margin-right: 40px; @media (min-width: 768px) { margin-right: 80px; }}
 .default-margin-bottom {margin-bottom: 40px; @media (min-width: 768px) { margin-bottom: 80px; };}
@@ -36,3 +43,10 @@
 
 .text-left {text-align: left;}
 .text-right {text-align: right;}
+.text-center {text-align: center;}
+
+
+.text-indented { @media (min-width: 768px) { margin-left: -40px; padding-left: 40px; }}
+.default-layout-left-sidebar .text-indented { @media (min-width: 768px) { margin-left: 0px; } }
+
+.sticky {position: sticky;top: 0;}
