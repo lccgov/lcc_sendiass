@@ -1,4 +1,4 @@
-.promo-two-col{
+.promo-two-col {
     h1,h2,h3,h4,h5,h6 {
         &:after {
             width: 50px;
@@ -22,9 +22,6 @@
         align-content: flex-start;
         flex-direction: column;
         justify-content: center;
-        @media (min-width: 768px) {
-            padding-left: 40px;
-        }
     }
     .btn {
         width: fit-content;
@@ -37,6 +34,13 @@
     @media (max-width: 767px) {
         .promo-two-col-content {
             margin-top: 16px;
+        }
+    }
+    &.promo-two-col-alt {
+        .promo-two-col-content {            
+            @media (min-width: 768px) {
+                padding-left: 52px;
+            }
         }
     }
 }

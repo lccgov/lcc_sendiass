@@ -121,11 +121,16 @@ p.lead.ms-rteElement-P {
     line-height: 1.5;
 }
 
+.text-small {
+    font-size: 14px;
+    display: block;
+}
+
 // --------------------- UL font styles --------------------------
 // ---------------------------------------------------------------
 ul.list {
     margin-top: 0;
-    padding-left: 16px;
+    padding-left: 17px;
     margin-bottom: 16px;
     li {
         a {
@@ -273,7 +278,7 @@ a {
             content: "\f35d";
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
-            padding-left: 8px;
+            padding-left: 4px;
         }
     }
 }
@@ -295,22 +300,25 @@ a {
 
 // --------------------- Contact details -------------------------
 // ---------------------------------------------------------------
-.email {
+ul.contact {
     padding-left: 30px;
+}
+
+.email {
+    
     position: relative;
     &:before {
         content: "\f0e0";
         color: #222222;
         font-family: FontAwesome;
         position: absolute;
-        left: 0;
-        top: 0px;
+        left: -30px;
+        top: -1px;
         display: inline-block;
     }
 }
 
 .telephone {
-    padding-left: 30px;
     position: relative;
     &:before {
         content: "\f879";
@@ -318,14 +326,13 @@ a {
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         position: absolute;
-        left: 0;
-        top: 0px;
+        left: -30px;
+        top: -2px;
         display: inline-block;
     }
 }
 
 .address {
-    padding-left: 30px;
     position: relative;
     &:before {
         content: "\f3c5";
@@ -333,8 +340,28 @@ a {
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         position: absolute;
-        left: 0;
+        left: -30px;
         top: 0px;
         display: inline-block;
+    }
+}
+
+// --------------------- Print icon ------------------------------
+// ---------------------------------------------------------------
+
+.print {
+    text-decoration: underline;
+    padding: 8px;
+    margin-left: -8px;
+    &:before {
+        content: "\f02f";
+        color: #222222;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        padding-right: 8px;
+    }
+    &:focus {
+        border-bottom: 2px solid #222222;
+        text-decoration: none;
     }
 }

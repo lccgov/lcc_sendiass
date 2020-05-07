@@ -1,0 +1,48 @@
+// Alert error
+.alert-error {
+    border-left: 8px solid rgba(163, 8, 42, 1);
+    background: rgba(163, 8, 42,.1);
+    margin-bottom: 40px;
+    padding: 16px;
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Alert success
+.alert-success {
+    border-left: 8px solid rgba(0, 97, 65, 1);
+    background: rgba(0,97,65,.1);
+    margin-bottom: 40px;
+    padding: 16px;
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Alert warning
+.alert-warning {
+    border-left: 8px solid rgba(255, 183, 0, 1);
+    background: rgba(255, 183, 0,.1);
+    margin-bottom: 40px;
+    padding: 16px;
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Error message
+.error-message {
+    color: #d32f2f;
+    display: block;
+    clear: both;
+    margin: 0 0 5px;
+    padding: 2px 0;
+    font-weight: 600;
+    &:before {
+        font-family: FontAwesome;
+        content: "\F071";
+        margin-right: 5px;
+        font-weight: 900;
+    }
+}

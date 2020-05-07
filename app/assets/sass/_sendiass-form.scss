@@ -1,0 +1,71 @@
+// Sharepoint overrides
+
+.btn, input[type=button], input[type=reset], input[type=submit], button {
+    margin-left: 0;
+}
+
+// Button styling
+input[type=button], input[type=reset], input[type=submit], button {
+    background: #8F298C;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 7px 24px;
+    line-height: 32.4px;
+    border: 4px solid #8F298C;
+    border-radius: 33px;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    &:visited {
+        color: #ffffff;
+    }
+    &:hover {
+        background: white;
+        text-decoration: none;
+        color: #222222;
+        border: 4px solid #8F298C
+    }
+    &:focus {
+        border: 4px solid #FFBF47;
+        background: #FFBF47;
+        color: #222222;
+    }
+}
+
+
+
+// Label styling
+.form-label {
+    display: block;
+    @include heading-xsmall();
+    margin: 0 0 8px 0;
+    @media (min-width: 641px) {
+        margin: 0 0 8px 0;
+    }
+
+}
+
+// Input styling
+.form-control, input[type=text] {
+    min-height: 50px;
+    border: 2px solid #222222;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 676px;
+    &:focus {
+        outline: none;
+        border: 2px solid #FFBF47;
+    }
+    &:hover {
+        border: 2px solid #222222;
+    }
+}
+
+input[type=submit] {
+    &:after {
+        content: "\f061";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        padding-left: 8px;
+    }
+}

@@ -1,14 +1,16 @@
-table {
-    text-align: left;
-    width: 100%;
-    td, th {
-        border-bottom: 1px solid #eceff1;
-        padding: 5px 0;
-    }
-    tr td, tr th {
-        width: 25%;
-    }
-    tr td:last-child, tr th:last-child {
-        width: 50%;
+.table-responsible {
+    table {
+        text-align: left;
+        width: 100%;
+        td, th {
+            border-bottom: 1px solid #eceff1;
+            padding: 5px 0;
+        }
+        tr td, tr th {
+            width: 25%;
+        }
+        tr td:last-child, tr th:last-child {
+            width: 50%;
+        }
     }
 }

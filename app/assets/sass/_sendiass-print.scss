@@ -1,0 +1,105 @@
+
+@media print {
+
+    // Specify a size and min-width to make printing closer across browsers.
+    // We don't set margin here because it breaks `size` in Chrome. We also
+    // don't use `!important` on `size` as it breaks in Chrome.
+        @page {
+            size: $print-page-size;
+        }
+        body {
+            min-width: $print-body-min-width !important;
+        }
+        .container {
+            min-width: $print-body-min-width !important;
+        }
+
+        #ms-designer-ribbon, .header-nav-container, footer {
+            display: none;
+        }
+
+        .js .accordion__panel {
+            display: block !important;
+            visibility: visible;
+            max-height: 100%;
+            padding-bottom: 20px;
+        }
+
+        .pre-header {
+            box-shadow: inset 0 0 0 1000px #222222;
+        }
+
+        .page-header {
+            background-color: transparent;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            .container-fluid {
+                padding: 32px 0;
+            }
+        }
+
+        .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+            padding: 0;
+        }
+
+        .page-header-title, .page-header-overview p, .page-header-overview p a {
+            color: #222222;
+        }
+
+        .page-header-title {
+            margin-top: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6, .ms-rtestate-field h1, .ms-rtestate-field h2, .ms-rtestate-field h3, .ms-rtestate-field h4, .ms-rtestate-field h5, .ms-rtestate-field h6 {
+            margin: 40px 0 24px 0;
+        }
+
+        .row {
+            > div {
+                flex: auto;
+                width: 85%;
+                max-width: 85%;
+            }
+        }
+
+        //Accordion
+        .js .accordion__trigger {
+            background-color: transparent;
+            box-shadow: inset 0 0 0 1000px #8F298C;
+            color: #ffffff;
+        }
+
+        .js .accordion__panel {
+            padding: 0 0 1.25em 0;
+        }
+
+        // Numbered list 
+        ul.numbered-list li:before {
+            background-color: transparent;
+            box-shadow: inset 0 0 0 1000px #8F298C;
+            color: #ffffff;
+        }
+
+        // Event panel
+        .event {
+            padding: 0;
+            background: transparent;
+            h2,h3,h4,h5,h6,p,a, ul li, ul li a {
+                color: #222222;
+            }
+            .btn-light {
+                box-shadow: inset 0 0 0 1000px #222222;
+                color: #ffffff;
+                border: 0;
+            }
+        }
+
+        // Print button
+        .print {
+            display: none;
+        }
+
+}
+
+
+

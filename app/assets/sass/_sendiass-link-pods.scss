@@ -36,8 +36,11 @@
                     position: absolute;
                     right: 24px;
                     font-size: 37px;
-                    top: 23px;
+                    top: 16px;
                     line-height: 40px;
+                    @media (min-width: 568px) {
+                        top: 22px;
+                    }
                 }
                 &.red {
                     background: #CE3438;                
@@ -84,6 +87,17 @@
                     &:after {
                         color: #222222;
                     }
+                }
+            }
+            &[rel=external] {
+                &:after {
+                    display: none;
+                }
+                p:after {
+                    content: "\f35d";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    padding-left: 8px;
                 }
             }
         }

@@ -177,13 +177,14 @@ nav.global-navigation {
 .page-header {
     background-color: #8F298C;
     text-align: center;  
-    padding-bottom: 97px;
+    padding-bottom: 39px;
     margin: 0 0 40px 0;
     border: 0;   
     text-align: left;
     position: relative; 
     @media (min-width: 768px) { 
         margin: 0 0 80px 0;
+        padding-bottom: 97px;
     }
     &.page-header-img {
         &:before {
@@ -202,9 +203,12 @@ nav.global-navigation {
         display: block;
         background: url('../images/wave.png') 100px repeat;
         position: absolute;
-        height: 100px;
+        height: 40px;
         width: 100%;
         background-size: auto 100%;
+        @media (min-width: 768px) { 
+            height: 100px;
+        }
     }
     .container-fluid {
         position: relative;
@@ -220,7 +224,7 @@ nav.global-navigation {
 }
 
 .page-header-overview {
-    max-width: 450px;
+    max-width: 500px;
     p, p a {
         color: #ffffff;
         margin-bottom: 0;
