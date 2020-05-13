@@ -46,7 +46,7 @@
 .text-center {text-align: center;}
 
 
-.text-indented { @media (min-width: 768px) { margin-left: -40px; padding-left: 40px; }}
+.text-indented { @media (min-width: 768px) { padding-left: 40px; }}
 .default-layout-left-sidebar .text-indented { @media (min-width: 768px) { margin-left: 0px; } }
 
 .sticky {position: sticky;top: 0;}

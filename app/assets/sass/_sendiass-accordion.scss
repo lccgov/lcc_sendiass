@@ -48,6 +48,8 @@
 	z-index: 2;  
     @include heading-xsmall();    
     margin: 0 0 16px 0;
+    border-radius: 0;
+    font-weight: 400;
     @media (min-width: 641px) {
         margin: 0 0 16px 0;
     }
@@ -141,9 +143,11 @@
 .js .accordion__panel[aria-hidden="false"] {
 	max-height: 100%;
 	overflow: auto;
-	padding: 0px 0px 16px 0px;
-	visibility: visible;
-    @media (min-width: 768px){
-        padding: 8px 0px 24px 0px;
-    }
+	
+    visibility: visible;
+    
+    border: 4px solid #8F298C;
+    margin-top: -20px;
+    padding: 16px;
+    margin-bottom: 16px;
 }

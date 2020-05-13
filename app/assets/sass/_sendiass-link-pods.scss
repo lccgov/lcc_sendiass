@@ -12,6 +12,7 @@
             align-items: flex-start;
             img {
                 border-top-left-radius: 33px;
+                flex-shrink: 0;
             }
             p {
                 border-bottom-right-radius: 33px;
