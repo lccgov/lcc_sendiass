@@ -94,6 +94,17 @@
             }
         }
 
+        // Details and summary
+        details:not([open]) details summary {
+        display:block!important;
+        }
+        details:not([open]){
+        visibility:visible;
+        }
+        details:not([open])>*, details:not([open])>details {
+        display:block;
+        }
+        
         // Print button
         .print {
             display: none;

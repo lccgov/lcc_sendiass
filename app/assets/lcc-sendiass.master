@@ -156,8 +156,8 @@
                             <div class="row">
                                 <div class="col-md-9 col-lg-6">
                                     <h2>Cookies on SENDIASS website</h2>
-                                    <p>We use cookies to help improve your experience of using our website. For more information about the cookies we use see our <a href="/Pages/PrivacyStatement.aspx">privacy page</a>.</p>
-                                    <p>If you continue without changing your cookie settings we assume that you are happy with our use of cookies. You can change your cookie settings at any time by following the instructions on our <a href="/Pages/PrivacyStatement.aspx">privacy page</a>.</p>
+                                    <p>We use cookies to help improve your experience of using our website. For more information about the cookies we use see our <a href="/privacy-statement">privacy page</a>.</p>
+                                    <p>If you continue without changing your cookie settings we assume that you are happy with our use of cookies. You can change your cookie settings at any time by following the instructions on our <a href="/privacy-statement">privacy page</a>.</p>
                                     <a class="submit js-seen-cookie-message" href="">Don't show this message again</a>
                                 </div>
                             </div>
