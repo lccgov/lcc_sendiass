@@ -5,11 +5,20 @@
     li {
         margin-bottom: 16px;        
         a {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             height: 100%;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
+            height: 100%;
             img {
                 border-top-left-radius: 33px;
                 flex-shrink: 0;
@@ -109,19 +118,19 @@
         margin-left: -8px;
         margin-right: -8px;
         li {
-            width: calc(50% - 16px);
+            width: calc(50% - 17px);
             margin: 0 8px 16px 8px;
         }
     }   
     @media (min-width: 768px) {
         li {
-            width: calc(33.333% - 16px);
+            width: calc(33.333% - 17px);
         }
         li.half {
-            width: calc(50% - 16px);
+            width: calc(50% - 17px);
         }
         li.two-thirds {
-            width: calc(66.666% - 16px);
+            width: calc(66.666% - 17px);
         }
     }
 }
