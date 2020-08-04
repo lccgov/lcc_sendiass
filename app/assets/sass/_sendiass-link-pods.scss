@@ -53,20 +53,24 @@
                     }
                 }
                 &.red {
-                    background: #CE3438;                
+                    background: $red;                
                     color: #ffffff;
                 }
                 &.blue {
-                    background: #3773BB;                
+                    background: $blue;                
                     color: #ffffff;
                 }
                 &.yellow {
-                    background: #F7C022;                
-                    color: #222222;
+                    background: $yellow;                
+                    color: $dark-text;
                 }
                 &.green {
-                    background: #1D6332;                
+                    background: $green;                
                     color: #ffffff;
+                }
+                &.pink {
+                    background: $pink;                
+                    color: $dark-text;
                 }
             }
             &:hover {
@@ -74,17 +78,20 @@
                 p {
                     background: darken(#8F298C, 15%);                       
                     &.red {
-                        background: darken(#CE3438, 15%);   
+                        background: darken($red, 15%);   
                     }
                     &.blue {
-                        background: darken(#3773BB, 15%);   
+                        background: darken($blue, 15%);   
                     }
                     &.yellow {
-                        background: darken(#F7C022, 15%); 
+                        background: darken($yellow, 15%); 
                         color: #ffffff;
                     }
                     &.green {
-                        background: darken(#1D6332, 15%);         
+                        background: darken($green, 15%);         
+                    }
+                    &.pink {
+                        background: darken($pink, 15%);         
                     }
                 }
             }

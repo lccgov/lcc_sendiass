@@ -1,10 +1,25 @@
 .highlight-box {
-    border: 8px solid purple;
+    border: 8px solid #8F298C;
     padding: 24px;
     > h1, > h2, > h3, > h4, > h5, > h6 {
         margin-top: 0;
         &:after {
             display: none;
         }
+    }
+    &.red {
+        border: 8px solid $red;
+    }
+    &.blue {
+        border: 8px solid $blue;
+    }
+    &.green {
+        border: 8px solid $green;
+    }
+    &.yellow {
+        border: 8px solid $yellow;
+    }
+    &.pink {
+        border: 8px solid $pink;
     }
 }

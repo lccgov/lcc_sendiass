@@ -8,15 +8,68 @@
     border-radius: 33px;
     font-weight: 700;
     display: inline-block;
-    cursor: pointer;
-    &:visited {
+    cursor: pointer;  
+    &:visited:not(:hover) {
         color: #ffffff;
     }
     &:hover {
         background: white;
         text-decoration: none;
         color: #222222;
-        border: 4px solid #8F298C
+        border: 4px solid #8F298C;
+    }
+    &.red {
+        background: $red;
+        border: 4px solid $red;
+        &:hover {            
+            background: white;
+            border: 4px solid $red;
+            color: $dark-text;
+        }
+    }
+    &.blue {
+        background: $blue;
+        border: 4px solid $blue;
+        &:hover {            
+            background: white;
+            border: 4px solid $blue;
+            color: $dark-text;
+        }
+    }
+    &.green {
+        background: $green;
+        border: 4px solid $green;
+        &:hover {        
+            background: white;    
+            border: 4px solid $green;
+            color: $dark-text;
+        }
+    }
+    &.yellow {
+        background: $yellow;
+        border: 4px solid $yellow;
+        color: $dark-text;
+        &:visited {            
+            color: $dark-text;
+        }
+        &:hover {        
+            background: white;    
+            border: 4px solid $yellow;
+            color: $dark-text;
+        }
+    }
+    &.pink {
+        background: $pink;
+        border: 4px solid $pink;
+        color: $dark-text;
+        &:visited {            
+            color: $dark-text;
+        }
+        &:hover {          
+            background: white;  
+            border: 4px solid $pink;
+            color: $dark-text;
+        }
     }
     &:focus {
         border: 4px solid #FFBF47;

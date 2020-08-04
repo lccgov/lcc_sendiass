@@ -78,6 +78,31 @@ h1, h2, h3, h4, h5, h6 {
         height: 2px;
         margin-top: 16px;
     }
+    &.red {
+        &:after {
+            background: $red;
+        }
+    }
+    &.blue {
+        &:after {
+            background: $blue;
+        }
+    }
+    &.green {
+        &:after {
+            background: $green;
+        }
+    }
+    &.yellow {
+        &:after {
+            background: $yellow;
+        }
+    }
+    &.pink {
+        &:after {
+            background: $pink;
+        }
+    }
     @media (min-width: 768px) {
         &:after {
             width: 96px;
@@ -199,6 +224,43 @@ ul.numbered-list {
             padding-bottom: 0;
         }
     }
+    &.yellow {
+        li {
+            &:before {
+                background-color: $yellow;                
+                color: $dark-text;
+            }
+        }
+    }
+    &.red {
+        li {
+            &:before {
+                background-color: $red;
+            }
+        }
+    }
+    &.green {
+        li {
+            &:before {
+                background-color: $green;
+            }
+        }
+    }
+    &.blue {
+        li {
+            &:before {
+                background-color: $blue;
+            }
+        }
+    }
+    &.pink {
+        li {
+            &:before {
+                background-color: $pink;
+                color: $dark-text;
+            }
+        }
+    }
     @media (min-width: 768px) {
         margin-bottom: 24px;
         padding-top: 8px;
@@ -295,6 +357,36 @@ a {
     padding-left: 16px;
     @media (min-width: 768px) {
         border-left: 16px solid #8F298C;
+    }
+    &.red {
+        border-left: 8px solid $red;
+        @media (min-width: 768px) {
+            border-left: 16px solid $red;
+        }
+    }
+    &.blue {
+        border-left: 8px solid $blue;
+        @media (min-width: 768px) {
+            border-left: 16px solid $blue;
+        }
+    }
+    &.green {
+        border-left: 8px solid $green;
+        @media (min-width: 768px) {
+            border-left: 16px solid $green;
+        }
+    }
+    &.yellow {
+        border-left: 8px solid $yellow;
+        @media (min-width: 768px) {
+            border-left: 16px solid $yellow;
+        }
+    }
+    &.pink {
+        border-left: 8px solid $pink;
+        @media (min-width: 768px) {
+            border-left: 16px solid $pink;
+        }
     }
 }
 

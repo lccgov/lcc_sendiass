@@ -72,6 +72,62 @@
     }
 }
 
+// ---------- Colour overrides ------------- //
+.js {
+    .accordion {
+        &.red {
+            .accordion__panel[aria-hidden="false"] {
+                border: 4px solid $red;
+            }
+            .accordion__trigger:not(:focus) {
+                background-color: $red;
+            }
+        }
+        &.blue {
+            .accordion__panel[aria-hidden="false"] {
+                border: 4px solid $blue;
+            }
+            .accordion__trigger:not(:focus) {
+                background-color: $blue;
+            }
+        }
+        &.green {
+            .accordion__panel[aria-hidden="false"] {
+                border: 4px solid $green;
+            }
+            .accordion__trigger:not(:focus) {
+                background-color: $green;
+            }
+        }
+        &.yellow {
+            .accordion__panel[aria-hidden="false"] {
+                border: 4px solid $yellow;
+            }
+            .accordion__trigger:not(:focus) {
+                background-color: $yellow;                
+                color: $dark-text;
+                &:before {      
+                    color: $dark-text;
+                    border-right: 1px solid $dark-text;
+                }
+            }
+        }
+        &.pink {
+            .accordion__panel[aria-hidden="false"] {
+                border: 4px solid $pink;
+            }
+            .accordion__trigger:not(:focus) {
+                background-color: $pink;
+                color: $dark-text;
+                &:before {      
+                    color: $dark-text;
+                    border-right: 1px solid $dark-text;
+                }
+            }
+        }
+    }
+}
+
 /**
  * This is needed to allow a double tap iOS 11
  * Safari + VO to function correctly, if there
@@ -151,3 +207,4 @@
     padding: 16px;
     margin-bottom: 16px;
 }
+

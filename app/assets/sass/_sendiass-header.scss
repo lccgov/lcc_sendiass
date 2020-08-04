@@ -184,7 +184,7 @@ nav.global-navigation {
     text-align: left;
     position: relative; 
     @media (min-width: 768px) { 
-        margin: 0 0 80px 0;
+        margin: 0 0 40px 0;
         padding-bottom: 97px;
     }
     &.page-header-img {
@@ -214,28 +214,40 @@ nav.global-navigation {
         }
     }
     &.red {
-        background: #CE3438;                
+        background: $red;                
         color: #ffffff;
     }
     &.blue {
-        background: #3773BB;                
+        background: $blue;                
         color: #ffffff;
     }
     &.yellow {
-        background: #F7C022;                
-        color: #222222;
+        background: $yellow;                
+        color: $dark-text;
         .page-header-title {
-            color: #222222;
+            color: $dark-text;
         }
         .page-header-overview {
             p, p a {
-                color: #222222;
+                color: $dark-text;
             }
         }
     }
     &.green {
-        background: #1D6332;                
+        background: $green;                
         color: #ffffff;
+    }
+    &.pink {
+        background: $pink;                
+        color: $dark-text;
+        .page-header-title {
+            color: $dark-text;
+        }
+        .page-header-overview {
+            p, p a {
+                color: $dark-text;
+            }
+        }
     }
     &:after {
         content: "";
