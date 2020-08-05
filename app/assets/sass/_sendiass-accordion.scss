@@ -82,6 +82,10 @@
             .accordion__trigger:not(:focus) {
                 background-color: $red;
             }
+            .accordion__trigger:hover {
+                background: darken($red, 20%);
+	            outline: none;
+            }
         }
         &.blue {
             .accordion__panel[aria-hidden="false"] {
@@ -90,6 +94,10 @@
             .accordion__trigger:not(:focus) {
                 background-color: $blue;
             }
+            .accordion__trigger:hover {
+                background: darken($blue, 20%);
+	            outline: none;
+            }
         }
         &.green {
             .accordion__panel[aria-hidden="false"] {
@@ -97,6 +105,10 @@
             }
             .accordion__trigger:not(:focus) {
                 background-color: $green;
+            }
+            .accordion__trigger:hover {
+                background: darken($green, 20%);
+	            outline: none;
             }
         }
         &.yellow {
@@ -111,6 +123,15 @@
                     border-right: 1px solid $dark-text;
                 }
             }
+            .accordion__trigger:hover {
+                background: darken($yellow, 20%);
+                outline: none;
+                color: #ffffff;
+                &:before {      
+                    color: #ffffff;
+                    border-right: 1px solid #ffffff;
+                }
+            }
         }
         &.pink {
             .accordion__panel[aria-hidden="false"] {
@@ -122,6 +143,15 @@
                 &:before {      
                     color: $dark-text;
                     border-right: 1px solid $dark-text;
+                }
+            }
+            .accordion__trigger:hover {
+                background: darken($pink, 20%);
+                outline: none;
+                color: #ffffff;
+                &:before {      
+                    color: #ffffff;
+                    border-right: 1px solid #ffffff;
                 }
             }
         }
