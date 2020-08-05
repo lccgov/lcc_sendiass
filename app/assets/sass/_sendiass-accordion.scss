@@ -84,7 +84,12 @@
             }
             .accordion__trigger:hover {
                 background: darken($red, 20%);
-	            outline: none;
+                outline: none;
+                color: #ffffff;
+                &:before {      
+                    color: #ffffff;
+                    border-right: 1px solid #ffffff;
+                }
             }
         }
         &.blue {
@@ -97,6 +102,11 @@
             .accordion__trigger:hover {
                 background: darken($blue, 20%);
 	            outline: none;
+                color: #ffffff;
+                &:before {      
+                    color: #ffffff;
+                    border-right: 1px solid #ffffff;
+                }
             }
         }
         &.green {
@@ -109,6 +119,11 @@
             .accordion__trigger:hover {
                 background: darken($green, 20%);
 	            outline: none;
+                color: #ffffff;
+                &:before {      
+                    color: #ffffff;
+                    border-right: 1px solid #ffffff;
+                }
             }
         }
         &.yellow {
