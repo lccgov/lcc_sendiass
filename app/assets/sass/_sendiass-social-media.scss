@@ -1,0 +1,76 @@
+.facebook-icon-white { 
+    &:before {
+        background: url('../images/social-media/facebook-white.png') no-repeat left center;
+        background-size: contain;
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:focus {        
+        &:before {
+            background: url('../images/social-media/facebook-black.png') no-repeat left center;
+            background-size: contain;
+        }
+    }
+}
+
+.youtube-icon-white { 
+    &:before {
+        background: url('../images/social-media/youtube-white.png') no-repeat left center;
+        background-size: contain;
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:focus {        
+        &:before {
+            background: url('../images/social-media/youtube-black.png') no-repeat left center;
+            background-size: contain;
+        }
+    }
+}
+
+.instagram-icon-white { 
+    &:before {
+        background: url('../images/social-media/instagram-white.png') no-repeat left center;
+        background-size: contain;
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:focus {        
+        &:before {
+            background: url('../images/social-media/instagram-black.png') no-repeat left center;
+            background-size: contain;
+        }
+    }
+}
+
+.twitter-icon-white { 
+    &:before {
+        background: url('../images/social-media/twitter-white.png') no-repeat left center;
+        background-size: contain;
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:focus {        
+        &:before {
+            background: url('../images/social-media/twitter-black.png') no-repeat left center;
+            background-size: contain;
+        }
+    }
+}
+
